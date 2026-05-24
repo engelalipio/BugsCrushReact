@@ -12,6 +12,18 @@ dist
 dist-ssr
 *.local
 
+# Xcode / iOS build artifacts
+*.xcuserstate
+xcuserdata/
+DerivedData/
+build/
+*.ipa
+*.dSYM.zip
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

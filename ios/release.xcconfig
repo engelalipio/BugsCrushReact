@@ -1,0 +1,2 @@
+// Release builds — disable Capacitor web debugging
+CAPACITOR_DEBUG = false

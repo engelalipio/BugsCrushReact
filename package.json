@@ -1,11 +1,12 @@
 {
   "name": "bugcrushnew",
   "private": true,
-  "version": "0.0.0",
+  "version": "4.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:ios": "npm run build && npx cap sync ios",
     "lint": "eslint .",
     "preview": "vite preview"
   },

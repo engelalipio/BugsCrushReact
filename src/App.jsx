@@ -366,7 +366,7 @@ export default function BugBlast() {
       display: "flex", flexDirection: "column", alignItems: "center",
       justifyContent: "flex-start",
       fontFamily: "'Fredoka One', cursive",
-      padding: "12px 8px 20px",
+      padding: "max(12px, env(safe-area-inset-top)) max(8px, env(safe-area-inset-right)) max(20px, env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left))",
       position: "relative", overflow: "hidden",
     }}>
       <style>{`
