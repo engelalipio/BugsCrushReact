@@ -100,13 +100,22 @@ If updating the **existing** App Store listing (previously 3.2), use version **�
 
 ### Screenshots & preview
 
-Required per device size (6.7", 6.5", 5.5" iPhone, iPad if supporting iPad). Capture from simulator or device:
+Pre-generated assets live in **`app-store-assets/screenshots/`** (5 scenes × 4 device sizes). Regenerate anytime:
 
 ```bash
-# Example: boot simulator and screenshot from Xcode (Cmd+S)
+npm run screenshots
 ```
 
-Minimum: 3 screenshots per size.
+| Folder | Size | App Store Connect slot |
+|--------|------|------------------------|
+| `iphone-6.7/` | 1290×2796 | 6.7" display (**required**) |
+| `iphone-6.5/` | 1284×2778 | 6.5" display |
+| `iphone-5.5/` | 1242×2208 | 5.5" display |
+| `ipad-12.9/` | 2048×2732 | 12.9" iPad Pro |
+
+App icon (1024×1024): **`app-store-assets/icons/AppIcon-1024.png`** (also installed in Xcode).
+
+Minimum: **3** screenshots per device size. See `app-store-assets/README.md`.
 
 ### App Privacy (nutrition labels)
 
